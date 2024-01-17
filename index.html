@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="./images/weather-icon-illustration03-Graphics-10205167-1-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+     <form>
+        <div class="search-bar">
+            <input spellcheck="false" autocomplete="off" id="search" type="text" placeholder="Search for cities" />
+          </div>
+     </form>
+
+     <div class="side-panel">
+      <img id="wlogo" src="./images/weather-icon-illustration03-Graphics-10205167-1-removebg-preview.png" alt="">
+     <div class="list">
+      <div id="silver" class="logo">
+        <i class="fa-solid fa-umbrella"></i>
+        <h5>Wheather</h5>
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-bars"></i>
+        <h5>Cities</h5>
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-map"></i>
+        <h5>Map</h5>
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-gear"></i>
+        <h5>Setting</h5>
+      </div>
+     </div>
+     
+     </div>
+
+
+      <div class="text-area">
+        <video autoplay muted loop id="myVideo">
+          <source src="./images/video.mp4" type="video/mp4">
+        </video>
+        <div class="data">
+            <h1 id="city"></h1>
+        <p id="feel"></p>
+        <h1 id="temp"></h1>
+        </div>
+        <img id="icon" src="" alt=""> 
+      </div>
+
+      <div id="last-box" class="today-forcast">
+<div class="part12">
+<span><p>Sunrise = &nbsp </p> <p id="sunrise"> </p></span>
+<span><p>Sunset = &nbsp </p> <p id="sunset"> </p></span>
+<span><p>humidity = &nbsp </p> <p id="humidity"> </p></span>
+<span><p>Chance of Snow = &nbsp </p> <p id="snow"> </p></span>
+<p</p>
+
+</div>
+<div class="part11">
+<span><p>Avg temperature = &nbsp </p> <p id="avgtemp"> </p></span>
+<span><p>Avg temp fahrenheit = &nbsp </p> <p id="avgfar"> </p></span>
+<span><p>max wind kph = &nbsp </p> <p id="maxwind"> </p></span>
+<span><p>chance of rain = &nbsp </p> <p id="rain"> </p></span>
+    
+      </div>
+
+      <div id="two" class="today-forcast2">
+        <p id="date">121212</p>
+      <div class="sections">
+       <div class="one">
+        <section>
+          <h5>6:00 Am</h5>
+           <img id="size" src="./images/116.webp" alt="icon">
+           <h4 id="h-1">30</h4>
+        </section>
+        <section>
+          <h5>9:00 Am</h5>
+          <img src="./images/113.webp" alt="icon">
+           <h4 id="h-2">30</h4>
+        </section>
+        <section>
+          <h5>12:00 Am</h5>
+        <img src="./images/113.webp" alt="icon">
+           <h4 id="h-3">30</h4>
+          </section>
+       </div>
+      <div class="two">
+        <section>
+          <h5>3:00 Pm</h5>
+        <img src="./images/113.webp" alt="icon">
+           <h4 id="h-4">30</h4>
+          </section>
+        <section>
+          <h5>6:00 Pm</h5>
+        <img src="./images/116.webp" alt="icon">
+           <h4 id="h-5">30</h4>
+          </section>
+        <section>
+          <h5>9:00 Pm</h5>
+        <img src="./images/113 (1).webp" alt="icon">
+           <h4 id="h-6">30</h4>
+          </section>
+      </div>
+      </div>
+      </div>
+
+      <div class="day-forcast"> 
+        <p id="day-head">7- Day Forcast</p>
+
+
+        <div class="box-location">
+           <div class="part1"> <p>Today</p></div>
+            <div class="part2"><img id="icon1" src="" alt="">
+            <h4 id="feel1">Feel</h4></div>
+            <div class="part3"><h5 id="temp1">34</h5>  </div>
+        </div>
+
+
+        <div class="box-location">
+            <div class="part1">
+                <p>Tuesday</p>
+            </div>
+            <div class="part2">
+                <img id="icon2" src="" alt="">
+            <h4 id="feel2">Feel</h4>
+            </div>
+           <div class="part3">
+            <h5 id="temp2">34</h5> 
+           </div>
+        </div>
+
+
+        <div class="box-location">
+          <div class="part1">
+            <p>Wednesday</p>
+          </div>
+           <div class="part2">
+            <img id="icon3" src="" alt="">
+            <h4 id="feel3">Feel</h4>
+           </div>
+           <div class="part3">
+            <h5 id="temp3">34</h5> 
+           </div>
+        </div>
+        <div class="box-location">
+            <div class="part1">
+                <p>Thusday</p>
+            </div>
+            <div class="part2">
+                <img id="icon4" src="" alt="">
+            <h4 id="feel4">Feel</h4>
+            </div>
+          <div class="part3">
+            <h5 id="temp4">34</h5> 
+          </div>
+        </div>
+        <div class="box-location">
+      <div class="part1">
+        <p>Friday</p>
+      </div>
+            <div class="part2">
+                <img id="icon5" src="" alt="">
+            <h4 id="feel5">Feel</h4>
+            </div>
+    <div class="part3">
+        <h5 id="temp5">34</h5> 
+    </div>
+        </div>
+        <div class="box-location">
+         <div class="part1">
+            <p>Saturday</p>
+         </div>
+            <div class="part2">
+                <img id="icon6" src="" alt="">
+            <h4 id="feel6">Feel</h4>
+            </div>
+           <div class="part3">
+            <h5 id="temp6">34</h5> 
+           </div>
+        </div>
+        <div class="box-location">
+            <div class="part1">
+                <p>Sunday</p>
+            </div>
+            <div class="part2">
+                <img id="icon7" src="" alt="">
+            <h4 id="feel7">Feel</h4>
+            </div>
+           <div class="part3">
+            <h5 id="temp7">34</h5> 
+           </div>
+        </div>
+    </div> 
+   
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

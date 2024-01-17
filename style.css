@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1rem;
+}
+.data {
+  width: 50%;
+}
+video {
+  display: none;
+}
+.one {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.two {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+:root {
+  --primaryColor: rgb(69, 69, 82);
+  --secondaryColor: silver;
+}
+
+.container {
+  border-radius: 0rem !important;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(1, 1, 22);
+}
+.side-panel {
+  height: 95vh;
+  width: 5%;
+  background-color: var(--primaryColor);
+  position: fixed;
+  top: 17px;
+  left: 2rem;
+}
+
+.search-bar {
+  position: relative;
+  top: 1.2rem;
+  left: 7rem;
+  height: 2.2rem;
+  width: 35rem;
+  background-color: var(--primaryColor);
+}
+.day-forcast {
+  height: 31.1rem;
+  width: 20rem;
+  background-color: var(--primaryColor);
+  position: absolute;
+  right: -22rem;
+  top: -20rem;
+  padding-left: 22px;
+  padding-top: 20px;
+}
+.today-forcast {
+  background-color: var(--primaryColor);
+  height: 11rem;
+  width: 44.3rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.part11 {
+  padding-right: 140px;
+}
+.part12 {
+  padding-left: 30px;
+}
+.today-forcast2 {
+  background-color: var(--primaryColor);
+  height: 11rem;
+  width: 44.3rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+  padding-inline: 20px;
+  color: var(--secondaryColor);
+}
+#two {
+  bottom: 13rem;
+}
+
+#search {
+  height: 2.1rem;
+  width: 20rem;
+  position: relative;
+  left: 2rem;
+  background-color: transparent;
+  color: var(--secondaryColor) !important;
+  font-size: 0.9rem;
+  padding-inline: 4px;
+}
+::placeholder {
+  color: var(--secondaryColor);
+  font-size: 13px;
+  text-align: start;
+}
+
+.text-area {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  color: var(--secondaryColor);
+  position: relative;
+  top: 1.5rem;
+  left: 7rem;
+  height: 9rem;
+  width: 45rem;
+  border-radius: 0px;
+}
+.list {
+  text-align: center;
+  font-weight: 600;
+}
+#silver {
+  color: silver;
+}
+.logo {
+  margin-top: 15px;
+  color: gray;
+}
+button:active {
+  transform: scale(95%);
+}
+
+#day-head {
+  font-size: 12px;
+  color: var(--secondaryColor);
+  padding: 0px px 0px 5px;
+}
+#date {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.box-location {
+  height: 60px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0rem;
+  border-bottom: 1px solid gray;
+  font-size: 1rem;
+  color: silver;
+}
+.box-location p {
+  font-size: 14px;
+}
+.part1 {
+  width: 20%;
+}
+.part2 {
+  width: 40%;
+  display: flex;
+  padding-inline: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.part3 {
+  width: 15%;
+}
+.part2 img {
+  height: 3rem;
+}
+.part2 h4 {
+  font-size: 12px;
+}
+#icon {
+  margin-right: 7rem;
+  height: 6rem;
+}
+img {
+  transition: all 1s linear;
+}
+img:hover {
+  transform: rotate(360deg);
+}
+.sections {
+  display: flex;
+  justify-content: space-around;
+}
+section {
+  border: 1px solid gray;
+  height: 100px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section:hover {
+  background-color: rgb(1, 1, 22);
+  color: silver;
+  box-shadow: 0 0 1rem silver;
+}
+#blue {
+  background-color: rgb(27, 97, 227);
+  color: white;
+  padding: 2px;
+  padding-inline: 7px;
+}
+
+.head2 {
+  padding-top: 10px;
+}
+#wlogo {
+  height: 50px;
+  position: relative;
+  left: -5px;
+}
+
+section img {
+  height: 3rem;
+}
+
+.part12 span {
+  display: flex;
+}
+.part11 span {
+  display: flex;
+}
+#sunrise,
+#sunset,
+#humidity,
+#snow,
+#avgtemp,
+#avgfar,
+#maxwind,
+#rain,
+.box-location h5 {
+  font-weight: bold;
+  color: gold;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  #myVideo {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: 32%;
+  }
+  .side-panel {
+    display: none;
+  }
+  .text-area {
+    left: 0;
+    width: 100%;
+  }
+  .search-bar {
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  #icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 7rem;
+  }
+  .today-forcast {
+    left: 0;
+    top: 13rem;
+    border-radius: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    align-items: center;
+    padding: 10px;
+  }
+  .today-forcast2 {
+    width: 100%;
+    height: 20rem;
+    border-radius: 0;
+  }
+  #two {
+    top: 11.3rem;
+    bottom: 0rem;
+    right: 0;
+  }
+  .day-forcast {
+    height: 31.1rem;
+    border-radius: 0;
+    width: 100%;
+    background-color: var(--primaryColor);
+    position: absolute;
+    right: 0rem;
+    top: 31.65rem;
+    padding-left: 22px;
+    padding-top: 20px;
+  }
+  .part11 {
+    padding: 0;
+  }
+  .part12 {
+    padding: 0;
+  }
+  .sections {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    background-color: rgb(1, 1, 22);
+    color: silver;
+    box-shadow: 0 0 0.3rem silver;
+  }
+  .one {
+    display: flex;
+    width: 100%;
+  }
+  .two {
+    display: flex;
+    width: 100%;
+  }
+  section {
+    margin: 5px;
+    height: 8rem;
+    width: 8rem;
+  }
+  #date {
+    font-weight: bolder;
+  }
+  .data {
+    z-index: 1;
+  }
+  #icon {
+    z-index: 1;
+  }
+}
