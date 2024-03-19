@@ -48,8 +48,9 @@ let date1 = document.querySelector("#date");
 const getwheather = async (e) => {
   try {
     e.preventDefault();
+
     let res = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=7cf9543b66334cdea78121216241701&q=${input.value}&days=8&aqi=yes&alerts=yes`
+      `https://api.weatherapi.com/v1/forecast.json?key=3df469a6dbb1434f897174901241903&q=${input.value}&days=8&aqi=yes&alerts=yes`
     );
     let data = await res.json();
     city.textContent = data.current.temp_c + " °";
